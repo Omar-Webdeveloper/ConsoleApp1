@@ -102,7 +102,7 @@ namespace ConsoleApp1
             Console.WriteLine(" Input your year of birth:  ");
             string year_of_birth = Console.ReadLine();
 
-            Console.WriteLine(firstname + lastname + year_of_birth);
+            Console.WriteLine(firstname + " " + lastname + " " + year_of_birth);
 
 
             Console.WriteLine("Task 4 Completed Successflly");
