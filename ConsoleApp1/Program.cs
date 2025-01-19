@@ -135,7 +135,7 @@ namespace ConsoleApp1
 
             foreach (int element in my_elements)
             {
-                Console.WriteLine(element);
+                Console.Write(element);
             }
 
 
