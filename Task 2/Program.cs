@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Task_2
 {
-    
+
     internal class Program
     {
         static void ToNumber(double x)
@@ -20,7 +20,7 @@ namespace Task_2
 
         }
 
-        static void ToOtherStrings( int x)
+        static void ToOtherStrings(int x)
         {
             string y = x.ToString();
             Console.WriteLine($"Output: Your number is: {y}");
@@ -33,13 +33,13 @@ namespace Task_2
             Console.WriteLine($" Uppercase:{x2} \n Lowercase:{x3}");
         }
 
-        static void print_user_name(string x,string y)
+        static void print_user_name(string x, string y)
         {
-            Console.WriteLine($"First Name: {x} \n Last Name: {y} \n Total Characters: {(x.Length) +(y.Length)}");
+            Console.WriteLine($"First Name: {x} \n Last Name: {y} \n Total Characters: {(x.Length) + (y.Length)}");
         }
 
 
-        static void small_number(int x ,int y)
+        static void small_number(int x, int y)
         {
             Console.WriteLine($"Smaller numnber is {Math.Min(x, y)} ");
         }
@@ -58,7 +58,7 @@ namespace Task_2
         static void total_Hours_mintues(int x)
         {
             int hours = x / 60;
-            int minutes= x % 60;
+            int minutes = x % 60;
             Console.WriteLine($"{hours}hours,{minutes} minutes");
         }
 
@@ -66,16 +66,17 @@ namespace Task_2
         static void compare_two_number(int x, int y)
         {
 
-            string result = (x > y) ? "Greater." : (x < y) ? "Smaller" : (x == y) ? "Equal" :"Something went wrong";
+            string result = (x > y) ? "Greater." : (x < y) ? "Smaller" : (x == y) ? "Equal" : "Something went wrong";
             Console.WriteLine(result);
-     
+
 
         }
         static void Sum_Digits()
-        { Console.Write("Enter the Number : ");
+        {
+            Console.Write("Enter the Number : ");
             int number = int.Parse(Console.ReadLine());
-        int sum = 0, reminder;
-           
+            int sum = 0, reminder;
+
             while (number > 0)
             {
                 reminder = number % 10;
@@ -83,9 +84,10 @@ namespace Task_2
                 number = number / 10;
             }
 
-    Console.WriteLine($"The Sum of Digits is : {sum}");}
+            Console.WriteLine($"The Sum of Digits is : {sum}");
+        }
 
-static void reversed_number()
+        static void reversed_number()
         {
             int num, rev = 0, rem;
             Console.Write("Enter a Number: ");
@@ -107,12 +109,12 @@ static void reversed_number()
         static void Middle_Value(int x, int y, int z)
         {
             bool A = (x > y && x < z) || (x < y && x > z);
-            Console.WriteLine($"{x} is the middle number {A}"); 
+            Console.WriteLine($"{x} is the middle number {A}");
 
-            bool A1 = (x < y && y < z)|| (x > y && y > z);
-            Console.WriteLine($"{y} is the middle number {A1}"); 
+            bool A1 = (x < y && y < z) || (x > y && y > z);
+            Console.WriteLine($"{y} is the middle number {A1}");
 
-            bool A2 = (z > y && x > z)|| (z < y && x < z);
+            bool A2 = (z > y && x > z) || (z < y && x < z);
             Console.WriteLine($"{z} is the middle number {A2}");
         }
         static void Main(string[] args)
@@ -181,7 +183,7 @@ static void reversed_number()
             int number_5 = Convert.ToInt32(Console.ReadLine());
             int number_6 = Convert.ToInt32(Console.ReadLine());
             int number_7 = Convert.ToInt32(Console.ReadLine());
-            Middle_Value(number_7, number_5, number_6); 
+            Middle_Value(number_7, number_5, number_6);
 
         }
     }
