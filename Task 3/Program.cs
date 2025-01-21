@@ -9,9 +9,9 @@ namespace Task_3
     public class Hotel_Reservation_System
     {
         public int Room_Number;
-        public static void Room_Type()
+        public  void Room_Type()
         {
-            Console.WriteLine(" input 1 = Single \n input 2 = Double \n input 3 = Suite");
+            Console.WriteLine(" Enter 1 = Single \n Enter 2 = Double \n Enter 3 = Suite");
             string x = Console.ReadLine();
 
             if (x == "1")
@@ -30,9 +30,9 @@ namespace Task_3
             }
         }
         public double Price_Per_Night;
-        public static void IsBooked()
+        public  void IsBooked()
         {
-            Console.WriteLine(" input 1 = Avilable ");
+            Console.WriteLine(" Enter 1 = Avilable \n Enter 2 = press any key to countinue ");
             string x = Console.ReadLine();
 
             if (x == "1")
@@ -202,8 +202,8 @@ namespace Task_3
             Hotel_Reservation_System room = new Hotel_Reservation_System();
             room.Room_Number = 101;
             room.Price_Per_Night = 150.00;
-            Hotel_Reservation_System.Room_Type();
-            Hotel_Reservation_System.IsBooked();
+            room.Room_Type();
+            room.IsBooked();
             Console.WriteLine(room.Room_Number);
             Console.WriteLine(room.Price_Per_Night);
 
@@ -213,8 +213,8 @@ namespace Task_3
             Hotel_Reservation_System room1 = new Hotel_Reservation_System();
             room1.Room_Number = 133;
             room1.Price_Per_Night = 44555;
-            Hotel_Reservation_System.Room_Type();
-            Hotel_Reservation_System.IsBooked();
+            room1.Room_Type();
+            room1.IsBooked();
             Console.WriteLine(room1.Room_Number);
             Console.WriteLine(room1.Price_Per_Night);
             Console.WriteLine();
