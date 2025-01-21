@@ -62,10 +62,47 @@ namespace problem_solving
                 }
             Console.WriteLine("Number of vowels: " + count);
         }
-                static void Main(string[] args)
+
+
+
+        public static void jana()
+        {
+            int x = Convert.ToInt32(Console.ReadLine());
+            int a = 0;
+            for (int i = 2; i < x; i++)
             {
-           
-            counts();
+                if (x % i == 0)
+                {
+                    Console.WriteLine("Not Prime");
+
+                    break;
+                }
+
+                else
+                {
+
+                    bool x1 = true;
+                    a++;
+                    if (a > 3)
+                    {
+                        Console.WriteLine("Not Prime");
+                    }
+                    
+                        
+                     
+
+                }
+            }
+            if (a == 1)
+            {
+
+                Console.WriteLine("Prime");
+            }
+        }
+        static void Main(string[] args)
+            {
+            jana(); 
+            //counts();
 
             //string name = "omar abo jolban";
             //foreach (char c in name) {Console.WriteLine(c);}

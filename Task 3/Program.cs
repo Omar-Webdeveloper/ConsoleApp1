@@ -16,16 +16,16 @@ namespace Task_3
 
             if (x == "1")
             {
-                Console.WriteLine("Single");
+                Console.WriteLine("Room type : Single");
             }
             else if (x == "2")
             {
-                Console.WriteLine("Double");
+                Console.WriteLine("Room type : Double");
 
             }
             else if (x == "3")
             {
-                Console.WriteLine("Suite");
+                Console.WriteLine("Room type : Suite");
 
             }
         }
@@ -37,11 +37,11 @@ namespace Task_3
 
             if (x == "1")
             {
-                Console.WriteLine("Avilable");
+                Console.WriteLine(" Is it Booked ? \n No, it is Avilable");
             }
             else
             {
-                Console.WriteLine("Booked");
+                Console.WriteLine(" Is it Booked ? \n Yes, it is Booked");
 
             }
         }
@@ -49,6 +49,8 @@ namespace Task_3
 
 
     }
+
+   
     internal class Program
     {
         static void Question_1()
@@ -87,7 +89,7 @@ namespace Task_3
             {
                 factorial = factorial * i;
             }
-            Console.Write($"Factorial of {number}  is: {factorial}");
+            Console.WriteLine($"Factorial of {number}  is: {factorial}");
 
         }
         static void Question_4()
@@ -110,7 +112,7 @@ namespace Task_3
                 }
                 if (isPrime)
                 {
-                    Console.Write("\t" + i);
+                    Console.WriteLine("\t" + i);
                 }
                 isPrime = true;
             }
@@ -171,7 +173,7 @@ namespace Task_3
             Console.WriteLine("Question 1: The number is Even or Odd?");
             Question_1();
 
-            Console.WriteLine("Question 2: The2nd Smallest number ?");
+            Console.WriteLine("Question 2: The2nd Smallest number ? \n Enter 5 number only");
 
             Question_2();
 
@@ -181,7 +183,7 @@ namespace Task_3
             Console.WriteLine("Question 4: two integers as input and prints all the prime numbers between them using nested loops?");
             Question_4();
 
-            Console.WriteLine("Question 5: that initializes an integer array and finds the largest number in it using a foreach loop?");
+            Console.WriteLine("Question 5: that initializes an integer array and finds the largest number in it using a foreach loop? \n enter the size of the array \n then enter the nmbers based on the size");
             int x = Convert.ToInt32(Console.ReadLine());
             Question_5(x);
 
@@ -204,8 +206,8 @@ namespace Task_3
             room.Price_Per_Night = 150.00;
             room.Room_Type();
             room.IsBooked();
-            Console.WriteLine(room.Room_Number);
-            Console.WriteLine(room.Price_Per_Night);
+            Console.WriteLine($"room number: {room.Room_Number}");
+            Console.WriteLine($"Romm Price per day : {room.Price_Per_Night}");
 
             Console.WriteLine();
             Console.WriteLine();
@@ -215,8 +217,8 @@ namespace Task_3
             room1.Price_Per_Night = 44555;
             room1.Room_Type();
             room1.IsBooked();
-            Console.WriteLine(room1.Room_Number);
-            Console.WriteLine(room1.Price_Per_Night);
+            Console.WriteLine($"room number: {room1.Room_Number}");
+            Console.WriteLine($"Romm Price per day : {room1.Price_Per_Night}");
             Console.WriteLine();
             Console.WriteLine();
 

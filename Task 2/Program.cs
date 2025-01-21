@@ -23,7 +23,7 @@ namespace Task_2
         static void ToOtherStrings(int x)
         {
             string y = x.ToString();
-            Console.WriteLine($"Output: Your number is: {y}");
+            Console.WriteLine($"Output: The String is: {y}");
         }
 
         static void print_captial_small_letter(string x)
@@ -46,7 +46,7 @@ namespace Task_2
 
         static void miles_per_hour(int x)
         {
-            Console.WriteLine($"{x / 0.6213711922} mph ");
+            Console.WriteLine($"{x / 1.6213711922} mph ");
         }
 
 
