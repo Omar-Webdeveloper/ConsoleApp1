@@ -29,7 +29,7 @@ namespace Fourth_task
             set
             {
                 if (value <= Max_Student_age && value >= Min_Student_age) { student_age = value; }
-                else { Console.WriteLine("next year "); }
+                else { student_age = 0; Console.WriteLine("next year "); }
             }
 
         }
@@ -56,6 +56,11 @@ namespace Fourth_task
         //Default constructor the doesn't do any action
         public Student()
         {
+            student_name = string.Empty;
+            student_ID = 0;
+            student_email = string.Empty;
+            survey = string.Empty;
+
 
         }
         //passing parameters to the consructer  for better readabilty and reusablty for the object called from this class
@@ -83,7 +88,11 @@ namespace Fourth_task
     {
         static void Main(string[] args)
         {
-       
+
+            // Create and initialize the Third student object using the parameterized constructor
+            Student new_student_03 = new Student("Ahmad", 22, 1001, "my_email", "my_comment");
+            new_student_03.Print_info();  // Print the information of the Third student
+
 
             // Create and initialize the first student object using the default constructor
             Student new_student_01 = new Student();
@@ -112,32 +121,34 @@ namespace Fourth_task
 
             // Create and initialize the second student object using the parameterized constructor
             Student new_student_02 = new Student(my_name, my_age, my_id, my_email, my_comment);
-            new_student_02.Print_info();  // Print the information of the second student
+            new_student_02.Print_info();  // Print the information of the second student            
 
 
-            Console.WriteLine("\n1. What is a class?\n"); 
-            Console.WriteLine("A class is a blueprint for creating objects. It defines properties, methods."); 
 
-            Console.WriteLine("\n2. What is an object?\n"); 
-            Console.WriteLine("An object is an instance of a class. It is created from a class and can access its properties and methods."); 
-            
-            Console.WriteLine("\n3. Difference between class and object?\n"); 
-            Console.WriteLine("A class is a template or blueprint, while an object is an instance of that class.\n The class defines the structure and behavior, while the object is the actual entity that exists in memory."); 
-            
-            Console.WriteLine("\n4. Mention the OOP Principles.\n"); 
-            Console.WriteLine("The four fundamental principles of Object-Oriented Programming are Encapsulation, Abstraction, Inheritance, and Polymorphism."); 
-            
-            Console.WriteLine("\n5. What is a property?\n"); 
-            Console.WriteLine("A property is a member of a class that provides a flexible mechanism to read, write, or compute the value of a private field.\n Properties can include logic for validation or computation."); 
-            
-            Console.WriteLine("\n6. What is a field?\n"); 
-            Console.WriteLine("A field is a variable that is declared directly in a class or struct. It holds data associated with the object or class."); 
-            
-            Console.WriteLine("\n7. What is a constructor?\n"); 
-            Console.WriteLine("A constructor is a special method in a class that is called when an object of the class is created. It is used to initialize the object."); 
-            
-            Console.WriteLine("\n8. What is encapsulation?\n"); 
-            Console.WriteLine("Encapsulation is the concept of bundling data (fields) and methods (functions) that operate on the data into a single unit (a class). It restricts direct access to some of the object's components, promoting data integrity and security.");
+
+            string Q1 ="1. What is a class?"; 
+            Console.WriteLine($" {Q1}\n\t\tA class is a blueprint for creating objects. It defines properties, methods.");
+
+            string Q2 = "2. What is an object?"; 
+            Console.WriteLine($" {Q2}\n\t\tAn object is an instance of a class. It is created from a class and can access its properties and methods.");
+
+            string Q3 = "3. Difference between class and object?"; 
+            Console.WriteLine($" {Q3}\n\t\tA class is a template or blueprint, while an object is an instance of that class.\n The class defines the structure and behavior, while the object is the actual entity that exists in memory.");
+
+            string Q4 = "4. Mention the OOP Principles."; 
+            Console.WriteLine($" {Q4}\n\t\tThe four fundamental principles of Object-Oriented Programming are Encapsulation, Abstraction, Inheritance, and Polymorphism.");
+
+            string Q5 = "5. What is a property?"; 
+            Console.WriteLine($" {Q5}\n\t\tA property is a member of a class that provides a flexible mechanism to read, write, or compute the value of a private field.\n Properties can include logic for validation or computation.");
+
+            string Q6 = "6. What is a field?"; 
+            Console.WriteLine($" {Q6}\n\t\tA field is a variable that is declared directly in a class or struct. It holds data associated with the object or class.");
+
+            string Q7 = "7. What is a constructor?"; 
+            Console.WriteLine($" {Q7}\n\t\tA constructor is a special method in a class that is called when an object of the class is created. It is used to initialize the object.");
+
+            string Q8 = "8. What is encapsulation?"; 
+            Console.WriteLine($" {Q8}\n\t\tEncapsulation is the concept of bundling data (fields) and methods (functions) that operate on the data into a single unit (a class). It restricts direct access to some of the object's components, promoting data integrity and security.");
         }
     }
 }
