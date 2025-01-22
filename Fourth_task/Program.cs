@@ -61,17 +61,17 @@ namespace Fourth_task
         //passing parameters to the consructer  for better readabilty and reusablty for the object called from this class
         public Student(string name, int age, int ID, string gmail, string comment)  
         {
-            Student_Name = name;
-            student_age = age;
-            Student_ID = ID;
-            Student_Email = gmail;
-            Survey = comment;
+            Student_Name = name;   // gave intial value for Student_Name from passing name value to Student_Name
+            student_age = age;// gave intial value for student_age from passing age value to student_age
+            Student_ID = ID;// gave intial value for Student_ID from passing ID value to Student_ID
+            Student_Email = gmail;// gave intial value for Student_Email from passing gmail value to Student_Email
+            Survey = comment;// gave intial value for Survey from passing comment value to Survey
         }
 
 
         public void Print_info() // method to print all property and feilds in this class
         {
-            Console.WriteLine($"School name : {School_name} \nStudent name : {Student_Name} \nStudent age : {student_age} \nStudent ID : {Student_ID} \nStudent email : {Student_Email} \nSurvey :{Survey} ");
+            Console.WriteLine($"\nSchool name : {School_name} \n\nStudent name : {Student_Name} \n\nStudent age : {student_age} \n\nStudent ID : {Student_ID} \n\nStudent email : {Student_Email} \n\nSurvey :{Survey} \n");
         }
 
         ~Student() // Destructor that displays a message when the object is being destroyed 
@@ -83,44 +83,60 @@ namespace Fourth_task
     {
         static void Main(string[] args)
         {
+       
+
             // Create and initialize the first student object using the default constructor
             Student new_student_01 = new Student();
-            new_student_01.Student_Name = "sleman";  // Set student name
-            new_student_01.Student_Age = 33;         // Set student age
-            new_student_01.Student_ID = 2019;        // Set student ID
-            new_student_01.Student_Email = "sleman@gmail.com";  // Set student email
-            new_student_01.Survey = "everything to our like";  // Set survey comment
+            Console.WriteLine("Enter the student's name:");
+            new_student_01.Student_Name = Console.ReadLine();  // Set student name from user input 
+            Console.WriteLine("Enter the student's age:");
+            new_student_01.Student_Age = Convert.ToInt32(Console.ReadLine());  // Set student age from user input then convert it to int value
+            Console.WriteLine("Enter the student's ID:");
+            new_student_01.Student_ID = Convert.ToInt32(Console.ReadLine());  // Set student ID from user input then convert it to int value
+            Console.WriteLine("Enter the student's email:");
+            new_student_01.Student_Email = Console.ReadLine();  // Set student email from user input 
+            Console.WriteLine("Enter the survey comment:");
+            new_student_01.Survey = Console.ReadLine();  // Set survey comment from user input 
             new_student_01.Print_info();  // Print the information of the first student
 
+            Console.WriteLine("Enter the student's name:");
+            string my_name = Console.ReadLine();  // Set student name from user input 
+            Console.WriteLine("Enter the student's age:");
+            int my_age = Convert.ToInt32(Console.ReadLine());  // Set student age from user input then convert it to int value
+            Console.WriteLine("Enter the student's ID:");
+            int my_id = Convert.ToInt32(Console.ReadLine());  // Set student ID from user input then convert it to int value
+            Console.WriteLine("Enter the student's email:");
+            string my_email = Console.ReadLine();  // Set student email from user input 
+            Console.WriteLine("Enter the survey comment:");
+            string my_comment = Console.ReadLine();  // Set survey comment from user input 
+
             // Create and initialize the second student object using the parameterized constructor
-            Student new_student_02 = new Student("omar abo jolban", 22, 2020, "omarabojolban9@gmail.com", "everything goes well");
+            Student new_student_02 = new Student(my_name, my_age, my_id, my_email, my_comment);
             new_student_02.Print_info();  // Print the information of the second student
 
 
+            Console.WriteLine("\n1. What is a class?\n"); 
+            Console.WriteLine("A class is a blueprint for creating objects. It defines properties, methods."); 
 
-
-            Console.WriteLine("1. What is a class?"); 
-            Console.WriteLine("A class is a blueprint for creating objects. It defines properties, methods, and events."); 
-
-            Console.WriteLine("\n2. What is an object?"); 
+            Console.WriteLine("\n2. What is an object?\n"); 
             Console.WriteLine("An object is an instance of a class. It is created from a class and can access its properties and methods."); 
             
-            Console.WriteLine("\n3. Difference between class and object?"); 
-            Console.WriteLine("A class is a template or blueprint, while an object is an instance of that class. The class defines the structure and behavior, while the object is the actual entity that exists in memory."); 
+            Console.WriteLine("\n3. Difference between class and object?\n"); 
+            Console.WriteLine("A class is a template or blueprint, while an object is an instance of that class.\n The class defines the structure and behavior, while the object is the actual entity that exists in memory."); 
             
-            Console.WriteLine("\n4. Mention the OOP Principles."); 
+            Console.WriteLine("\n4. Mention the OOP Principles.\n"); 
             Console.WriteLine("The four fundamental principles of Object-Oriented Programming are Encapsulation, Abstraction, Inheritance, and Polymorphism."); 
             
-            Console.WriteLine("\n5. What is a property?"); 
-            Console.WriteLine("A property is a member of a class that provides a flexible mechanism to read, write, or compute the value of a private field. Properties can include logic for validation or computation."); 
+            Console.WriteLine("\n5. What is a property?\n"); 
+            Console.WriteLine("A property is a member of a class that provides a flexible mechanism to read, write, or compute the value of a private field.\n Properties can include logic for validation or computation."); 
             
-            Console.WriteLine("\n6. What is a field?"); 
+            Console.WriteLine("\n6. What is a field?\n"); 
             Console.WriteLine("A field is a variable that is declared directly in a class or struct. It holds data associated with the object or class."); 
             
-            Console.WriteLine("\n7. What is a constructor?"); 
+            Console.WriteLine("\n7. What is a constructor?\n"); 
             Console.WriteLine("A constructor is a special method in a class that is called when an object of the class is created. It is used to initialize the object."); 
             
-            Console.WriteLine("\n8. What is encapsulation?"); 
+            Console.WriteLine("\n8. What is encapsulation?\n"); 
             Console.WriteLine("Encapsulation is the concept of bundling data (fields) and methods (functions) that operate on the data into a single unit (a class). It restricts direct access to some of the object's components, promoting data integrity and security.");
         }
     }
