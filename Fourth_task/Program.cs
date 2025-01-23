@@ -56,10 +56,11 @@ namespace Fourth_task
         //Default constructor the doesn't do any action
         public Student()
         {
-            student_name = string.Empty;
-            student_ID = 0;
-            student_email = string.Empty;
-            survey = string.Empty;
+            Student_Age = 0;
+            Student_Name = "Nothing is here";
+            Student_ID = 0;
+            Student_Email = "Nothing is here";
+            Survey = "Nothing is here";
 
 
         }
@@ -93,6 +94,9 @@ namespace Fourth_task
             Student new_student_03 = new Student("Ahmad", 22, 1001, "my_email", "my_comment");
             new_student_03.Print_info();  // Print the information of the Third student
 
+            // Create and initialize the Third student object using the parameterized constructor
+            Student new_student_04 = new Student();
+            new_student_04.Print_info();  // Print the information of the Third student
 
             // Create and initialize the first student object using the default constructor
             Student new_student_01 = new Student();

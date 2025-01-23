@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wenseday topics", "Wenseday
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fifth Task", "Fifth Task\Fifth Task.csproj", "{C12CE2A7-3E19-42A4-872A-CA5C23EBB220}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "مواضيع الخميس", "مواضيع الخميس\مواضيع الخميس.csproj", "{BDDFF3CE-E059-48A4-80CB-B20BB3C49710}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{C12CE2A7-3E19-42A4-872A-CA5C23EBB220}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C12CE2A7-3E19-42A4-872A-CA5C23EBB220}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C12CE2A7-3E19-42A4-872A-CA5C23EBB220}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDDFF3CE-E059-48A4-80CB-B20BB3C49710}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDDFF3CE-E059-48A4-80CB-B20BB3C49710}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDDFF3CE-E059-48A4-80CB-B20BB3C49710}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDDFF3CE-E059-48A4-80CB-B20BB3C49710}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
