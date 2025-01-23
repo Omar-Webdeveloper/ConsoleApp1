@@ -17,29 +17,37 @@ namespace Fifth_Task
         public int Model { get; set; }
         public void Laws()
         {
-            Console.WriteLine($"{Brand} {Model}");
+            Console.WriteLine($"logo :{Brand} \nYear :{Model}");
         }
 
 
     }
-    class Car : Vehicle
+    sealed class Car : Vehicle
     {
         private int number_of_doors;
         public int Number_of_doors 
         { 
             get { return number_of_doors; }
-            set { if (value > 5) { Console.WriteLine($" {value} is not  accept it "); }
+            set { if (value > 4) { Console.WriteLine($" {value} is not  accept it "); }
                 else { number_of_doors = value; } 
             }
                  
         }
 
-        //public void policy()
-        //{
-        //    Console.WriteLine($"{Brand} {Model}");
-        //}
+        public void policy()
+        {
+            Console.WriteLine($" all the {Brand} cars must have {number_of_doors} doors and must be new to this year {Model}");
+        }
 
     }
+
+    //class options_for_car : Car
+    //{
+    //    public options_for_car()
+    //    {
+    //        Console.WriteLine("Full touch screen");
+    //    }
+    //}
     internal class Program
     {
         static void Main(string[] args)
@@ -61,13 +69,23 @@ namespace Fifth_Task
 
 
             Vehicle factory = new Vehicle();
-            factory.Brand = "omar";
-            factory.Model = 2020;
+            Console.WriteLine("Enter the brand of the vehicle:");
+            factory.Brand = Console.ReadLine();
+
+            Console.WriteLine("Enter the model year of the vehicle:");
+            factory.Model = Convert.ToInt32(Console.ReadLine());
             factory.Laws();
 
             Car car = new Car();
-            car.Number_of_doors = 5;
-            car.Laws();
+            Console.WriteLine("Enter the number of doors for the car:");
+            car.Number_of_doors = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter the brand of the car:");
+            car.Brand = Console.ReadLine();
+
+            Console.WriteLine("Enter the model year of the car:");
+            car.Model = Convert.ToInt32(Console.ReadLine());
+            car.policy();
 
             
 
