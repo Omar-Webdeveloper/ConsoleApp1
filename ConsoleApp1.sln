@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fifth Task", "Fifth Task\Fi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "مواضيع الخميس", "مواضيع الخميس\مواضيع الخميس.csproj", "{BDDFF3CE-E059-48A4-80CB-B20BB3C49710}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sixth Task", "Sixth Task\Sixth Task.csproj", "{D383F0A6-1D58-4765-834E-EBAFF7C151E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{BDDFF3CE-E059-48A4-80CB-B20BB3C49710}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDDFF3CE-E059-48A4-80CB-B20BB3C49710}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDDFF3CE-E059-48A4-80CB-B20BB3C49710}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D383F0A6-1D58-4765-834E-EBAFF7C151E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D383F0A6-1D58-4765-834E-EBAFF7C151E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D383F0A6-1D58-4765-834E-EBAFF7C151E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D383F0A6-1D58-4765-834E-EBAFF7C151E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
